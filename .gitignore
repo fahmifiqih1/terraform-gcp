@@ -1,0 +1,19 @@
+# Local .terraform directories
+**/.terraform/*
+
+.terraform/
+
+# .tfstate files (Sangat rahasia & dinamis)
+*.tfstate.*
+.terraform.Lock.hcl
+
+# Sensitive Credentials (GCP JSON file Anda)
+gcp-json/*.json
+*.json
+
+# Variables files yang berisi data sensitif
+*.tfvars
+*.tfvars.json
+
+# MacOS system files
+.DS_Store
