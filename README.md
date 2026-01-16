@@ -10,20 +10,19 @@ The project demonstrates how to create:
 - Compute Engine instances
 
 It is structured using **environment separation** and **reusable modules**.
-`
 .
-├── environments         # Konfigurasi spesifik per environment (Root Modules)
-│   ├── develop          # Environment Development
-│   ├── staging          # Environment Staging
-│   └── production       # Environment Production
-├── modules              # Resource Reusable (Child Modules)
-│   ├── compute          # Modul untuk VM/GCE instances
-│   ├── firewall         # Modul untuk Firewall rules
-│   └── network          # Modul untuk VPC, Subnet, dll.
-├── gcp-json             # Lokasi Service Account Key (Sensitive)
-├── tfstate              # Lokasi penyimpanan local state (jika tidak menggunakan remote backend)
+├── environments/ # Konfigurasi spesifik per environment (Root Modules)
+│ ├── develop/ # Environment Development
+│ ├── staging/ # Environment Staging
+│ └── production/ # Environment Production
+├── modules/ # Resource Reusable (Child Modules)
+│ ├── compute/ # Modul untuk VM / GCE instances
+│ ├── firewall/ # Modul untuk Firewall rules
+│ └── network/ # Modul untuk VPC, Subnet, dll
+├── gcp-json/ # Service Account Key (Sensitive, DO NOT COMMIT)
+├── tfstate/ # Local Terraform state (optional)
 └── README.md
-`
+
 ---
 
 ## 🚀 What This Project Does
