@@ -6,6 +6,7 @@
 # .tfstate files (Sangat rahasia & dinamis)
 *.tfstate.*
 .terraform.Lock.hcl
+tfstate/*
 
 # Sensitive Credentials (GCP JSON file Anda)
 gcp-json/*.json
