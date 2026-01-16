@@ -10,6 +10,7 @@ The project demonstrates how to create:
 - Compute Engine instances
 
 It is structured using **environment separation** and **reusable modules**.
+<pre>
 .
 ├── environments         # Konfigurasi spesifik per environment (Root Modules)
 │   ├── develop          # Environment Development
@@ -22,7 +23,7 @@ It is structured using **environment separation** and **reusable modules**.
 ├── gcp-json             # Lokasi Service Account Key (Sensitive)
 ├── tfstate              # Lokasi penyimpanan local state (jika tidak menggunakan remote backend)
 └── README.md
-
+</pre>
 ---
 
 ## 🚀 What This Project Does
