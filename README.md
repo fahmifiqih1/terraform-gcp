@@ -11,17 +11,39 @@ The project demonstrates how to create:
 
 It is structured using **environment separation** and **reusable modules**.
 .
-├── environments/ # Konfigurasi spesifik per environment (Root Modules)
-│ ├── develop/ # Environment Development
-│ ├── staging/ # Environment Staging
-│ └── production/ # Environment Production
-├── modules/ # Resource Reusable (Child Modules)
-│ ├── compute/ # Modul untuk VM / GCE instances
-│ ├── firewall/ # Modul untuk Firewall rules
-│ └── network/ # Modul untuk VPC, Subnet, dll
-├── gcp-json/ # Service Account Key (Sensitive, DO NOT COMMIT)
-├── tfstate/ # Local Terraform state (optional)
-└── README.md
+├── environments
+│   ├── develop
+│   │   ├── backend.tf
+│   │   ├── main.tf
+│   │   ├── provider.tf
+│   │   ├── README.md
+│   │   ├── terraform.tfvars
+│   │   ├── variables.tf
+│   │   └── version.tf
+│   ├── production
+│   │   └── main.tf
+│   └── staging
+│       └── main.tf
+├── gcp-json
+│   └── lateral-chiller-483407-d6-a99ebf38b2db.json
+├── modules
+│   ├── compute
+│   │   ├── main.tf
+│   │   ├── outputs.tf
+│   │   └── variables.tf
+│   ├── firewall
+│   │   ├── locals.tf
+│   │   ├── main.tf
+│   │   └── varibales.tf
+│   └── network
+│       ├── locals.tf
+│       ├── main.tf
+│       ├── outputs.tf
+│       ├── provider.tf
+│       └── variables.tf
+├── README.md
+└── tfstate
+    └── terraform.tfstate
 
 ---
 
